@@ -20,3 +20,6 @@ def test_g():
     # for floats, be sure to use assert_almost_equal instead (here to 4 digits)
     nose.tools.assert_almost_equal(actual, trial, 4)
 
+def test_interval():
+def test_integrate():
+def test_gauss_norm():
