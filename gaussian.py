@@ -4,6 +4,7 @@ def g(x):
     g = (1/math.sqrt(2*math.pi))*(math.exp(-x**2/2))
     return g
 
+
 def interval(f, a, b, dx):
     intList = []
     N = int((b-a)/dx)
@@ -22,3 +23,6 @@ def integrate(i, dx):
     
 if __name__ == "__main__":
     print(interval(f,0,1,.1))
+
+#interval(f,0,1,.1)
+
