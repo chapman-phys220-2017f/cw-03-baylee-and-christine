@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import math
 
 def g(x):
     g = (1/math.sqrt(2*math.pi))*(math.exp(-x**2/2))
@@ -17,7 +18,7 @@ def integrate(i, dx):
     total = i[0]+i[n-1]
     for r in range(1,n-1):
         total += 2*i[r]
-	    total = (dx/2)*total
+        total = (dx/2)*(total)
     return total
     
     
