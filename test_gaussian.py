@@ -33,7 +33,7 @@ def test_integrate():
     # Testing
     trial = gaussian.integrate(gaussian.interval(gaussian.g,-1,2,1),1)
     # Debug
-    print("Testing integral from -1 to 1: ",actual," ?= ",trial)
+    print("Testing integral from -1 to 2: ",actual," ?= ",trial)
     #assert
     nose.tools.assert_almost_equal(actual, trial)
     
