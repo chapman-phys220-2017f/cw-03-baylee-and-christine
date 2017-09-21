@@ -21,10 +21,9 @@ def test_interval():
     # Pre-computed correct value of interval(f,0,1,.2)
     actual = [gaussian.g(0), gaussian.g(.2), gaussian.g(1)]
     # Testing implementation
-    trial = gaussian.interval(gaussian.f,0,1,.2)
+    trial = gaussian.interval(gaussian.g,0,1,.2)
     # Debug messages
     print("Testing interval(f,0,1,0.5): ",actual," ?= ",trial)
-    #assert
     for r in range(0,2):
         nose.tools.assert_almost_equal(actual[r], trial[r], 4)
 
@@ -32,7 +31,7 @@ def test_integrate():
     # Pre-computed correct value of the integral
     actual = (1/2)*(gaussian.g(-1)+2*gaussian.g(0)+2*gaussian.g(1)+gaussian.g(2))
     # Testing
-    trial = gaussian.integrate(gaussian.interval(gaussian.f,-1,2,1),1)
+    trial = gaussian.integrate(gaussian.interval(gaussian.g,-1,2,1),1)
     # Debug
     print("Testing integral from -1 to 1: ",actual," ?= ",trial)
     #assert
