@@ -29,7 +29,7 @@ def test_interval():
 
 def test_integrate():
     # Pre-computed correct value of the integral
-    actual = (1/2)*(gaussian.g(-1)+2*gaussian.g(0)+2*gaussian.g(1)+gaussian.g(2))
+    actual = (1/2)*(gaussian.g(-1)+(2*gaussian.g(0))+(2*gaussian.g(1))+gaussian.g(2))
     # Testing
     trial = gaussian.integrate(gaussian.interval(gaussian.g,-1,2,1),1)
     # Debug
