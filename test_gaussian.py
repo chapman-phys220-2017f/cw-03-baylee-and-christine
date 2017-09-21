@@ -19,9 +19,9 @@ def test_g():
 
 def test_interval():
     # Pre-computed correct value of interval(f,0,1,.2)
-    actual = [gaussian.g(0), gaussian.g(.2), gaussian.g(1)]
+    actual = [gaussian.g(0), gaussian.g(.5), gaussian.g(1)]
     # Testing implementation
-    trial = gaussian.interval(gaussian.g,0,1,.2)
+    trial = gaussian.interval(gaussian.g,0,1,.5)
     # Debug messages
     print("Testing interval(f,0,1,0.5): ",actual," ?= ",trial)
     for r in range(0,2):
@@ -41,7 +41,7 @@ def test_gauss_norm():
     # Pre-computed correct value of integral(i,dx)
     actual = 1.00000
     # Testing
-    trial = gaussian.integrate(gaussian.interval(gaussian.f,-20,20,.1),.1)
+    trial = gaussian.integrate(gaussian.interval(gaussian.g,-20,20,.1),.1)
     #Debug
     print("Testing integral of normalized Gaussian function from -20 to 20: ",actual," ?= ",trial)
     #assert

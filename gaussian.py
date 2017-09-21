@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import math
 
 import math
 
@@ -6,6 +7,8 @@ def g(x):
     g = (1/math.sqrt(2*math.pi))*(math.exp(-x**2/2))
     return g
 
+def e(x):
+    return math.exp(x)
 
 def interval(f, a, b, dx):
     intList = []
@@ -19,7 +22,7 @@ def integrate(i, dx):
     total = i[0]+i[n-1]
     for r in range(1,n-1):
         total += 2*i[r]
-	total = (dx/2)*total
+        total = (dx/2)*total
     return total
 
 
