@@ -19,10 +19,10 @@ def interval(f, a, b, dx):
 
 def integrate(i, dx):
     n = len(i)
-    total = 0
+    total = i[0]+i[n-1]
     for r in range(1,n-1):
         total += 2*i[r]
-        total = (dx/2)*total
+    total = (dx/2)*total
     return total
 
 
