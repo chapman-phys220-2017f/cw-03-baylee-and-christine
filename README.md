@@ -39,7 +39,7 @@ Pro-tip: using git to manage conflicts on Jupyter notebooks is a pain. I recomme
 
 Analyze in this section what you found useful about this assignment in your own words. Include any lingering questions or comments that you may have.
 
-
+It was useful to learn how to transfer the way of thinking about integrals from the mathematical way to a more code-oriented way using the indices of the interval. Thinking that way is going to be very helpful for the homework and future assignments. We finally got the build to pass after fixing errors with our syntax.
 
 ## Honor Pledge
 
